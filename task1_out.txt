@@ -1,0 +1,47 @@
+D:\Файлы\Учеба\ruby>ruby task1.rb
+--------------------------------------------------
+
+ВАРИАНТ 1 - самый простой, с рекурсией
+0, a..c:            PASSED []
+5, ["a"]:           PASSED []
+1, ["a"]:           PASSED ["a"]
+5, ["a", "b"]:      PASSED ["ababa", "babab"]
+3, a..c:            PASSED ["aba", "abc", "aca", "acb", "bab", "bac", "bca", "bcb", "cab", "cac", "cba", "cbc"]
+1, A..Q:            PASSED ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q"]
+11, a..d:           Подождите... Сгенерировано 236196 строк в среднем за 285.3 мс
+
+ВАРИАНТ 2 - такой же, но с each вместо for
+0, a..c:            PASSED []
+5, ["a"]:           PASSED []
+1, ["a"]:           PASSED ["a"]
+5, ["a", "b"]:      PASSED ["ababa", "babab"]
+3, a..c:            PASSED ["aba", "abc", "aca", "acb", "bab", "bac", "bca", "bcb", "cab", "cac", "cba", "cbc"]
+1, A..Q:            PASSED ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q"]
+11, a..d:           Подождите... Сгенерировано 236196 строк в среднем за 282.6 мс
+
+ВАРИАНТ 3 - с генератором вместо построения массива целиком
+0, a..c:            PASSED []
+5, ["a"]:           PASSED []
+1, ["a"]:           PASSED ["a"]
+5, ["a", "b"]:      PASSED ["ababa", "babab"]
+3, a..c:            PASSED ["aba", "abc", "aca", "acb", "bab", "bac", "bca", "bcb", "cab", "cac", "cba", "cbc"]
+1, A..Q:            PASSED ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q"]
+11, a..d:           Подождите... Сгенерировано 236196 строк в среднем за 373.4 мс
+
+ВАРИАНТ 4 - с функцией repeated_permutation
+0, a..c:            PASSED []
+5, ["a"]:           PASSED []
+1, ["a"]:           PASSED ["a"]
+5, ["a", "b"]:      PASSED ["ababa", "babab"]
+3, a..c:            PASSED ["aba", "abc", "aca", "acb", "bab", "bac", "bca", "bcb", "cab", "cac", "cba", "cbc"]
+1, A..Q:            PASSED ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q"]
+11, a..d:           Подождите... Сгенерировано 236196 строк в среднем за 5346.9 мс
+
+ВАРИАНТ 5 - как второй, но с распараллеливанием по первой букве
+0, a..c:            PASSED []
+5, ["a"]:           PASSED []
+1, ["a"]:           PASSED ["a"]
+5, ["a", "b"]:      PASSED ["ababa", "babab"]
+3, a..c:            PASSED ["aba", "abc", "aca", "acb", "bab", "bac", "bca", "bcb", "cab", "cac", "cba", "cbc"]
+1, A..Q:            PASSED ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q"]
+11, a..d:           Подождите... Сгенерировано 236196 строк в среднем за 265.4 мс

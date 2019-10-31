@@ -1,0 +1,49 @@
+-- Тесты создания и операций над массивами --
+#<ArrayParallel:0x000000000512c690 @_arr=["a", "b"]>
+#<ArrayParallel:0x000000000512c3e8 @_arr=["a", "b"]>
+#<ArrayParallel:0x000000000512c230 @_arr=["a", "Q", "W"]>
+["a", "Q", "W"]
+-- Тесты any? --
+false
+true
+false
+true
+-- Тесты map и select --
+#<Enumerator: #<Enumerator::Generator:0x0000000005137838>:each>
+#<ArrayParallel:0x0000000005136d48 @_arr=["1,i=0", "2,i=1", "3,i=2", "4,i=3", "5,i=4"]>
+#<ArrayParallel:0x0000000005134f20 @_arr=["1!", "2!", "3!", "4!", "5!"]>
+#<ArrayParallel:0x0000000005134980 @_arr=[1, 2, 3]>
+#<ArrayParallel:0x0000000005137900 @_arr=[1, 2, 3, 4, 5]>
+#<ArrayParallel:0x0000000005137900 @_arr=["1!", "2!", "3!", "4!", "5!"]>
+#<ArrayParallel:0x0000000005137900 @_arr=["1!", "2!", "3!", "4!", "5!"]>
+-- Тесты корректности многопоточности в any? --
+Создание массива...
+Тест первый запущен, должен работать долго...
+thread 3 found element
+terminating thread...
+terminating thread...
+thread 0 stopped iteration
+all threads finished
+true
+Тест первый завершен за 2.490877299999738 секунд
+----------------------------------------------
+Тест второй запущен, должен завершаться быстро...
+thread 0 found element
+terminating thread...
+terminating thread...
+terminating thread...
+thread 0 stopped iteration
+all threads finished
+true
+Тест второй завершен за 0.014798300000620657 секунд
+----------------------------------------------
+Тест третий запущен, должен завершаться быстро...
+thread 1 found element
+terminating thread...
+terminating thread...
+thread 0 stopped iteration
+all threads finished
+true
+Тест третий завершен за 0.018823499999598425 секунд
+----------------------------------------------
+Готово

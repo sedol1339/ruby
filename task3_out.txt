@@ -1,0 +1,87 @@
+-------------------------------------------
+File contains 10000 lines
+Cannot parse content at line #8898: "GET /scripts/grok-py-test/configlib.py HTTP/1.1" 200 235 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html
+9999 lines parsed
+example of parsed line:
+{
+  "ip": "83.149.9.216",
+  "time": "2015-05-17T10:05:03+00:00",
+  "method": "GET",
+  "url": "/presentations/logstash-monitorama-2013/images/kibana-search.png",
+  "protocol": "HTTP/1.1",
+  "status": 200,
+  "size": 203023,
+  "referer": "http://semicomplete.com/presentations/logstash-monitorama-2013/",
+  "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36"
+}
+-------------------------------------------
+IP with max requests:
+66.249.73.135 - 482 requests
+46.105.14.53 - 364 requests
+130.237.218.86 - 357 requests
+75.97.9.59 - 273 requests
+50.16.19.13 - 113 requests
+209.85.238.199 - 102 requests
+68.180.224.225 - 99 requests
+100.43.83.137 - 84 requests
+208.115.111.72 - 83 requests
+198.46.149.143 - 82 requests
+208.115.113.88 - 74 requests
+
+Methods and requests amount:
+GET - 9951 requests
+HEAD - 42 requests
+POST - 5 requests
+OPTIONS - 1 requests
+
+Useragents (up to first whitespace) with 2+ requests and requests amount:
+Mozilla/5.0 - 8045 requests
+UniversalFeedParser/4.2-pre-314-svn - 364 requests
+Mozilla/4.0 - 332 requests
+Tiny - 198 requests
+- - 190 requests
+FeedBurner/1.0 - 108 requests
+Feedfetcher-Google; - 102 requests
+msnbot/2.0b - 96 requests
+Opera/9.80 - 85 requests
+Chef - 61 requests
+Feedbin - 50 requests
+Safari/9537.73.11 - 34 requests
+Twitterbot/1.0 - 28 requests
+msnbot-media/1.1 - 22 requests
+Digg - 21 requests
+LiveJournal.com - 19 requests
+Sogou - 18 requests
+Midori/0.2 - 18 requests
+LAVA.KKT35+.FARSIGHTED60D_CN_11B_HW - 16 requests
+Googlebot-Image/1.0 - 13 requests
+facebookexternalhit/1.1 - 13 requests
+SAMSUNG-SGH-E250/1.0 - 12 requests
+distilator/0.1 - 9 requests
+Liferea/1.8.3 - 9 requests
+DoCoMo/2.0 - 8 requests
+Feedly/1.0 - 8 requests
+magpie-crawler/1.1 - 7 requests
+portscout/0.8.1 - 7 requests
+psbot/0.1 - 7 requests
+SAMSUNG-GT-E2232/1.0 - 6 requests
+Dalvik/1.6.0 - 6 requests
+Embedly - 5 requests
+Python-urllib/2.7 - 4 requests
+Opera/9.64(Windows - 4 requests
+Wget/1.14 - 4 requests
+fetch - 4 requests
+MobileSafari/9537.53 - 4 requests
+binlar_2.6.3 - 4 requests
+HTTP_Request2/2.1.1 - 4 requests
+Newsify/120 - 3 requests
+Mozilla/1.22 - 3 requests
+Reeder/2.1.1 - 3 requests
+Xenu - 3 requests
+MAXX_MAUI - 3 requests
+ia_archiver - 3 requests
+Ruby - 3 requests
+LumiBot - 2 requests
+eZ - 2 requests
+nutch-1.4/Nutch-1.4 - 2 requests
+QS304 - 2 requests
